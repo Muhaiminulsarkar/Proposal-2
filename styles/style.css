@@ -175,6 +175,72 @@ nav ul{
     border: none;
 }
 
+/* about section style */
+.about-container{
+    background-color:rgb(27, 12, 47) ;
+    margin-top: -1px;
+    padding:40px 20px ;
+}
+
+.about-des{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 10px;
+}
+.about-des h1{
+   font-family: Inter;
+    font-style: Bold;
+    font-size: 48px;
+    font-weight: 700;
+    color:white;
+}
+.about-des p{
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.8;
+    color:white;
+}
+
+.about-stats{
+    border-top: 1px solid rgba(65, 37, 103, 1);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 50px 10px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.stats h2{
+    font-family: Inter;
+    font-style: Black;
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+}
+.stats p{
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.8;
+    color:white;
+    text-transform: capitalize;
+}
+
+
+
 @media screen and (max-width : 576px) {
     /* navbar style */
     .hidden-mobile{
@@ -217,5 +283,16 @@ nav ul{
         position: absolute;
         top: 10px;
         right: 20px;
+    }
+
+    /* about section */
+    .about-des h1{
+        font-size: 32px;
+    }
+    .about-des{
+        padding: 5px 5px;
+    }
+    .about-stats{
+        grid-template-columns: repeat(2,1fr);
     }
 }
