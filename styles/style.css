@@ -20,6 +20,20 @@
      border-bottom: 1px solid rgba(65, 37, 103, 1);
 }
 
+.sub-title{
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.hidden-pc{
+    display: none;
+}
+
+
 /* header style */
 
 header {
@@ -35,9 +49,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
-   
+    padding: 20px 0px; 
 }
+
 nav li {
     list-style: none;
 }
@@ -77,11 +91,11 @@ nav ul{
     background-image: url(../assets/hero-bg.png);
     background-size: contain;
     background-position: center;
+    
 }
 
 .hero-div{
     height: 100%;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,17 +104,118 @@ nav ul{
     padding-bottom:50px;
 }
 
+.hero-div h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+
 .hero-bg{
+    position: relative;
     width: 21.85rem;
     height: 21.85rem;
-    background-image: url(../assets/hero-circle.png);
+    
 }
 
 .hero{
     height: 100%;
     width: 100%;
+    background-image: url(../assets/hero-circle.png);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+.btn-grp{
+    display: flex;
+    gap: 15px;
+}
+
+.hero-btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    gap: 5px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 16px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));  
+}
+
+.hero-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    color: #00FF88;
+    padding: 12px 20px;
+    border: 2px solid #00FF88;
+    border-radius: 30px;
+}
+
+.tooltip{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+.tooltip button{
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+
+@media screen and (max-width : 576px) {
+    /* navbar style */
+    .hidden-mobile{
+        display: none;
+    }
+    .hidden-pc{
+        display: block;
+    }
+    nav{
+       padding: 16px 20px;
+    }
+    .nav-logo img{
+        width: 140px;
+    }
+
+    /* hero section */
+    .hero-section{
+        height: 620px;
+        background-repeat: no-repeat;
+        padding: 10px 20px;
+    }
+    .hero-div h1{
+        font-size: 40px;
+    }
+    .hero-div p{
+        text-align: center;
+    }
+    .hero-bg{
+        width: 17rem;
+        height: 17rem;
+    }
+    .hero{
+       background-position: center;
+       background-size: contain;
+    }
+    .hero img{
+        width: 80px;
+    }
+    .tooltip{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
 }

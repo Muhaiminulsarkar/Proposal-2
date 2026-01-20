@@ -17,16 +17,19 @@
                 <div class="nav-logo">
                     <img src="./assets/logo.png" alt="">
                 </div>
-                <div>
+                <div class="hidden-mobile">
                     <ul>
                         <li><a href="">About</a></li>
                         <li><a href="">Episodes</a></li>
                         <li><a href="">Host</a></li>
                     </ul>
                 </div>
-                 <div class="nav-button">
+                 <div class="nav-button hidden-mobile">
                     <button>Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg></button>
+                </div>
+                <div class="hidden-pc">
+                    <img src="./assets/hamburger-menu.png" alt="">
                 </div>
             </nav>
         </div>
@@ -41,12 +44,15 @@
                     <div class="hero">
                         <img src="./assets/microphone.png" alt="">
                     </div>
+                    <div class="tooltip">
+                        <button>NEW</button>
+                    </div>
                 </div>
                 <h1>TechWave</h1>
-                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                <div>
-                    <button> <span><img src="./assets/spotify.png" alt=""></span> Listen On Spotify</button>
-                    <button><span><img src="./assets/message.png" alt=""></span>Subscribe</button>
+                <p class="sub-title">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="btn-grp">
+                    <button class="hero-btn1"> <span><img src="./assets/spotify.png" alt=""></span> Listen On Spotify</button>
+                    <button class="hero-btn2"><span><img src="./assets/message.png" alt=""></span>Subscribe</button>
                 </div>
             </div>
         </section>
