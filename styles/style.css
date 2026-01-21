@@ -81,7 +81,16 @@ nav ul{
     font-size: 15px;
     font-weight: 500;
     padding: 12px 16px;
-    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));  
+    background: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8, #f7e93f);
+    background-size: 300% 300%; 
+    animation: gradient-flow 4s ease infinite;  
+    cursor: pointer;
+}
+
+.nav-button button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(251, 9, 180, 0.3);
+    transition: all 0.3s ease;
 }
 
 /* hero section style */
@@ -141,7 +150,16 @@ nav ul{
     font-size: 15px;
     font-weight: 500;
     padding: 12px 16px;
-    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));  
+    background: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8, #f7e93f);
+    background-size: 300% 300%; 
+    animation: gradient-flow 4s ease infinite; 
+    cursor: pointer;
+}
+
+.hero-btn1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(251, 30, 185, 0.3);
+    transition: all 0.3s ease;
 }
 
 .hero-btn2{
@@ -157,6 +175,15 @@ nav ul{
     padding: 12px 20px;
     border: 2px solid #00FF88;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-btn2:hover {
+    background-color: #00FF88; 
+    color: #000000;           
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.6); 
+    transform: translateY(-5px); 
 }
 
 .tooltip{
@@ -172,6 +199,7 @@ nav ul{
     font-size: 15px;
     font-weight: 600;
     border: none;
+    animation: blinker 2s linear infinite;
 }
 
 /* about section style */
@@ -514,4 +542,43 @@ iframe{
         gap: 15px;
     }
  
+}
+
+
+
+
+/* Defining the Blink */
+@keyframes blinker {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.2) rotate(-3deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3) rotate(3deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.2) rotate(-3deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
