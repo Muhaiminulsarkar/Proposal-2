@@ -430,9 +430,12 @@ iframe{
     font-weight: 400;
 }
 .social-grp{
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
-    gap:40px;
+    gap:10px;
 }
 
 .footer-social{
@@ -538,7 +541,7 @@ iframe{
     }
 
    .social-grp{
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
         gap: 15px;
     }
  
