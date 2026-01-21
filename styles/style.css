@@ -338,7 +338,7 @@ iframe{
     height: 20px;
 }
 
-.features h3{
+.features , .host h3{
     font-family: Inter;
     font-style: Bold;
     font-size: 24px;
@@ -347,13 +347,33 @@ iframe{
     padding: 15px 0 0 0 ;
 }
 
-.features p{
+.features, .host p{
     margin: 15px 0;
     font-family: Inter;
     font-style: Regular;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.561);
+}
+
+/* host section style */
+
+.host{
+    background-color: rgba(37, 13, 68, 1);
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50px;
 }
 
 
@@ -427,5 +447,10 @@ iframe{
     .feature-container{
         flex-direction: column;
     }
-    
+
+    /* host section style */
+    .host{
+       flex-direction: column; 
+       text-align: center;   
+   }
 }
